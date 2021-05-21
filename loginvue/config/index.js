@@ -11,12 +11,10 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      // '/user': {
-      //   target: 'http://127.0.0.1:8081',
-      //   changeOrigin: true,
-      // },
-      proxy: 'http://localhost:8081',
-      port: 8080
+      '/': {
+        target: 'http://127.0.0.1:8081',
+        changeOrigin: true,
+      },
     },
 
     // Various Dev Server settings

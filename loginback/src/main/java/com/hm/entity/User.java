@@ -22,8 +22,6 @@ public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @TableId(value = "id")
-    private String id;
     /**
      * 用户名
      */
@@ -34,15 +32,6 @@ public class User implements Serializable {
      */
     private String password;
 
-    /**
-     * 性别 0 女| 1 男
-     */
-    private String sex;
-
-    /**
-     * 是否锁住 0 否 | 1 是
-     */
-    private String locked;
 
 
 }

@@ -14,8 +14,7 @@ Vue.use(VueAxios, axios)
 
 /*设置全局*/
 Vue.prototype.$axios = axios
-// 前端请求默认发送到 http://localhost:8848
-axios.defaults.baseURL = 'http://127.0.0.1:8080'
+
 Vue.config.productionTip = false
 
 new Vue({

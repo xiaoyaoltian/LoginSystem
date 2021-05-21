@@ -38,23 +38,13 @@
     },
     methods:{
       submitLogin(){
-        /*this.$refs.loginForm.validate((validate) =>{  // Element自带的校验
-          if(validate){
-            alert("submit!");
-          }else {
-            this.$message.error("请输入所有字段");
-            return false;
-          }
-        })*/
-        // this.$axios.Post('/user/login').then(res =>{
-        //   this.$message.info("woshi");
-        // })
         // 使用 axios发送请求
-        this.$axios.post('/login', {
+        this.$axios.post('/user/login', {
           username: this.loginForm.username,
           password: this.loginForm.password
         }).then(successResponse => {
           if (successResponse.data.code === 200) {
+            this.$message("登陆成功")
             this.$router.push('/main')
           }
         }).catch(failResponse => {

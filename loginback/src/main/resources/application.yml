@@ -11,4 +11,4 @@ mybatis-plus:
 #日志配置文件
 logging:
   level:
-    org.springframework.boot.autoconfigure: ERROR
+    org.springframework.boot.autoconfigure: info
